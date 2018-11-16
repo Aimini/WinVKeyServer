@@ -2,19 +2,13 @@ package com.win_vkey.startai.server
 
 
 import ch.qos.logback.core.util.FileUtil
-import org.apache.tomcat.util.http.fileupload.FileUtils
-import org.springframework.beans.BeanUtils
 import org.springframework.beans.BeanWrapperImpl
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.cglib.core.ReflectUtils
 import org.springframework.core.io.Resource
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver
-import org.springframework.core.io.support.ResourcePatternResolver
 import org.springframework.util.FileCopyUtils
-import org.springframework.util.FileSystemUtils
 import java.io.File
-import java.io.IOException
 import java.io.InputStream
 
 @SpringBootApplication
@@ -44,3 +38,4 @@ fun extractResources() {
         e.printStackTrace()
     }
 }
+
